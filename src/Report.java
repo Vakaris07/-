@@ -5,7 +5,7 @@ public class Report {
     private List<Event> events;
 
     public Report(List<Event> events){
-        this.events= new ArrayList<>();
+        this.events= events;
     }
 
     public List<Event> findEventByName(String name){

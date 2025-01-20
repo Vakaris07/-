@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 public class Main {
     public static void main(String[] args) {
-        Workshop workshopOne = new Workshop(1, "EE workshop", "Working on EE", "January 30th", "10AM");
+        Workshop workshopOne = new Workshop(12, "EE workshop", "Working on EE", "January 30th", "10AM");
         Concert concertOne = new Concert(23, "Adele in Munich", "Adele live", "August 10th", "7PM");
         Concert concertTwo = new Concert(190, "Renaissance World Tour", "Beyonce Live", "September 15th", "8PM");
 
@@ -31,7 +31,7 @@ public class Main {
         }
 
         System.out.println("Event with ID 12:");
-        Event foundEvent = report.findEventById(1);
+        Event foundEvent = report.findEventById(12);
         if (foundEvent != null) {
             System.out.println(foundEvent.getDetails());
         } else {
